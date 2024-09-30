@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Responsive Layout Design</title>
+</head>
+<body>
+    <div class="top-container">
+        <nav id="navbar-container">
+            <div class= "logo">
+                <img src="./logo.svg" alt="Logo Picture" />
+                <div id="menu-dropdown" onclick="toggleMenu()">Menu &#x25BC;</div>
+            </div>
+            
+            <ul id="navbar">
+                <li><a href="">Live</a></li>
+                <li><a href="">Push</a></li>
+                <li><a href="">Note</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Packs</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">More +</a></li>
+                <li><a href="">Try Live 12 for Free</a></li>
+                <li><a href="">Login or Register</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Apprenticeships</a></li>
+        </ul>
+        <div class="image-container">
+            <img src="./header.avif" alt="Header Image"/>
+            <div class="overlay-text">Ableton</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            var container = document.getElementById("navbar-container");
+            navbar.classList.toggle("active");
+            container.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
